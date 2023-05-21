@@ -5,7 +5,7 @@
 ** hello world?
 */
 
-#include "includes/stumper.h"
+#include "../includes/stumper.h"
 
 char cell_die(char **maps, int i, int j, int nb_cell)
 {

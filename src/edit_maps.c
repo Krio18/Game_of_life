@@ -5,7 +5,7 @@
 ** you're a bad developer
 */
 
-#include "includes/stumper.h"
+#include "../includes/stumper.h"
 
 char edit_maps_bin(char **maps, int i, int j)
 {

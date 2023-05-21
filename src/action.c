@@ -5,7 +5,7 @@
 ** don't forget to free at the end
 */
 
-#include "includes/stumper.h"
+#include "../includes/stumper.h"
 
 int x_verif(char **maps, int i, int j)
 {

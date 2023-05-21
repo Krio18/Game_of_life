@@ -5,7 +5,7 @@
 ** vim-epitech made by x4m3
 */
 
-#include "includes/stumper.h"
+#include "../includes/stumper.h"
 
 int main(int ac, char **av)
 {

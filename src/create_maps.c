@@ -5,7 +5,7 @@
 ** epitech > 42
 */
 
-#include "includes/stumper.h"
+#include "../includes/stumper.h"
 
 char **create_map(char **av)
 {
