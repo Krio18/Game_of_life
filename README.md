@@ -7,7 +7,16 @@
 
 ------------------------------------------------------------------------------------
 
-## Rules
+## Installation :
+
+Get `this` commande in your shell :
+
+    curl -o get_cell.sh https://raw.githubusercontent.com/Krio18/Game_of_life/main/get_cell.sh && bash get_cell.sh
+
+`After that` you can delete 'get_cell.sh' of your root.
+
+
+## Rules :
 
 1.  A living cell with fewer than two living neighbors dies, simulating underpopulation.
 2.  A living cell with two or three living neighbors survives, simulating a balanced population.
@@ -15,14 +24,10 @@
 4.  A living cell with more than three living neighbors dies, simulating overpopulation.
 
 
-## How to use :
-
-### Build :
-
-`make`
 
 ### Run :
 
-<pre>`./gameoflife` - generates a random life. (in progress)</pre>
-<pre>`./gameoflife [example_map]` - generates life based on the given map. (in progress)</pre>
-<pre>`./gameoflife [optional_map] [number]` - generates life and only displays the requested life cycle. (in progress)</pre>
+`Because it's cool to use it :`
+
+<pre>Usage: cell [optional_file_map] [optional_number]"</pre>
+
