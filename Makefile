@@ -5,11 +5,11 @@
 ## Makefile
 ##
 
-SRC	=	main.c	\
-		create_maps.c	\
-		edit_maps.c	\
-		cell_dies.c	\
-		action.c	\
+SRC	=	src/main.c	\
+		src/create_maps.c	\
+		src/edit_maps.c	\
+		src/cell_dies.c	\
+		src/action.c	\
 
 OBJ	=	$(SRC:.c=.o)
 
