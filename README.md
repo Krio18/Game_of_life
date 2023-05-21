@@ -3,6 +3,9 @@
 "Game of Life" is a computer program that simulates an environment composed of living and dead cells, originally developed by the British mathematician John Conway in 1970. This simulation is based on a set of simple rules that determine the evolution of cells over generations.
 
 ------------------------------------------------------------------------------------
+![Image de démonstration](asset/game-of-life.png.png)
+
+------------------------------------------------------------------------------------
 
 ## Rules
 
@@ -12,13 +15,13 @@
 4.  A living cell with more than three living neighbors dies, simulating overpopulation.
 
 
-## comment L'utiliser :
+## How to use :
 
-### build :
+### Build :
 
 `make`
 
-### run :
+### Run :
 
 <pre>`./gameoflife` - generates a random life. (in progress)</pre>
 <pre>`./gameoflife [example_map]` - generates life based on the given map. (in progress)</pre>
