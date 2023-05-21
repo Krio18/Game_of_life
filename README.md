@@ -6,7 +6,7 @@
 
 ## Rules
 
-<span style="color: red;">1.</span style="color: red;">  A living cell with fewer than two living neighbors dies, simulating underpopulation.
+1.  A living cell with fewer than two living neighbors dies, simulating underpopulation.
 2.  A living cell with two or three living neighbors survives, simulating a balanced population.
 3.  An empty space with exactly three living neighbors becomes a cell in the next generation, simulating reproduction.
 4.  A living cell with more than three living neighbors dies, simulating overpopulation.
@@ -20,6 +20,6 @@
 
 ### run :
 
-<pre>`./gameoflife` - generates a random life. (in progress)<br></pre>
-<pre>`./gameoflife [example_map]` - generates life based on the given map. (in progress)<br></pre>
-<pre>`./gameoflife [optional_map] [number]` - generates life and only displays the requested life cycle. (in progress)<br></pre>
+<pre>`./gameoflife` - generates a random life. (in progress)</pre>
+<pre>`./gameoflife [example_map]` - generates life based on the given map. (in progress)</pre>
+<pre>`./gameoflife [optional_map] [number]` - generates life and only displays the requested life cycle. (in progress)</pre>
