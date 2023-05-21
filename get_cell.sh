@@ -18,8 +18,9 @@ echo -e "${CRED}
 ${RESET}"
 echo ""
 echo -e "${ORANGE}Usage: ${GREEN}cell [${LIGHT_GREEN}optional_file_map${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
-echo ""
 
 cd ~/Game_of_life && ./install/install.sh
 
-rm get_cell.sh
+echo ""
+echo -e "${ORANGE}You can delete ${LIGHT_GREEN}'get_cell.sh'${GREEN} file now.${RESET}"
+echo ""

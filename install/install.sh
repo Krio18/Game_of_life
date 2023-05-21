@@ -10,8 +10,8 @@ make -s
 
 
 # Déplacement des binaire vers un emplacement approprié
-sudo mv src/*.o ./Bin
-sudo mv lib/my/*.o ./Bin
+sudo mv src/*.o ./Binary
+sudo mv lib/my/*.o ./Binary
 
 # Permissions d'exécution pour l'utilisateur
 sudo cp install/cell /usr/local/bin/cell
