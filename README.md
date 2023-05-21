@@ -20,6 +20,6 @@
 
 ### run :
 
-`./gameoflife` - generates a random life. (in progress)
-`./gameoflife [example_map]` - generates life based on the given map. (in progress)
-`./gameoflife [optional_map] [number]` - generates life and only displays the requested life cycle. (in progress)
+<pre>`./gameoflife` - generates a random life. (in progress)<br></pre>
+<pre>`./gameoflife [example_map]` - generates life based on the given map. (in progress)<br></pre>
+<pre>`./gameoflife [optional_map] [number]` - generates life and only displays the requested life cycle. (in progress)<br></pre>
