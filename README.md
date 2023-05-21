@@ -6,7 +6,7 @@
 
 ## Rules
 
-1.  A living cell with fewer than two living neighbors dies, simulating underpopulation.
+<span style="color: red;">1.</span style="color: red;">  A living cell with fewer than two living neighbors dies, simulating underpopulation.
 2.  A living cell with two or three living neighbors survives, simulating a balanced population.
 3.  An empty space with exactly three living neighbors becomes a cell in the next generation, simulating reproduction.
 4.  A living cell with more than three living neighbors dies, simulating overpopulation.
