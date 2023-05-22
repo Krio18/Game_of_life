@@ -41,7 +41,7 @@ char **edit_maps(char **maps)
     int nb_cell = 0;
 
     for (int i = 0; maps[i] != NULL; i++) {
-        for (int j = 0; maps[i][j] != '\0'; j++) {
+        for (int j = 0; maps[i][j]; j++) {
             nb_cell = 0;
             nb_cell = make_action(maps, i, j, nb_cell);
             maps[i][j] = new_cell(maps, i, j, nb_cell);

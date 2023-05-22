@@ -10,6 +10,7 @@ SRC	=	src/main.c	\
 		src/edit_maps.c	\
 		src/cell_dies.c	\
 		src/action.c	\
+		src/generation.c	\
 
 OBJ	=	$(SRC:.c=.o)
 

@@ -7,6 +7,7 @@
 
 SRC	=	my_getnbr.c	\
 		my_put_array.c	\
+		my_array_length.c	\
 		my_put_nbr.c	\
 		my_putchar.c	\
 		my_putstr.c	\

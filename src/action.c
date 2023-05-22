@@ -31,11 +31,11 @@ int make_action(char **maps, int i, int j, int nb_cell)
         nb_cell += x_verif(maps, (i), (j - 1));
     if (j + 1 <= my_strlen(maps[i]))
         nb_cell += x_verif(maps, (i), (j + 1));
-    if (i + 1 <= my_strlen(maps[i]) && j - 1 >= 0)
+    if (i + 1 <= my_array_length(maps) && j - 1 >= 0)
         nb_cell += x_verif(maps, (i + 1), (j - 1));
-    if (i + 1 <= my_strlen(maps[i]))
+    if (i + 1 <= my_array_length(maps))
         nb_cell += x_verif(maps, (i + 1), (j));
-    if (i + 1 <= my_strlen(maps[i]) && j + 1 <= my_strlen(maps[i]))
+    if (i + 1 <= my_array_length(maps) && j + 1 <= my_strlen(maps[i]))
         nb_cell += x_verif(maps, (i + 1), (j + 1));
     return nb_cell;
 }
