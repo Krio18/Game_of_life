@@ -39,6 +39,8 @@ char **maps_bin(char **maps)
 char **edit_maps(char **maps)
 {
     int nb_cell = 0;
+    int c = 0;
+    const char *CLEAR_SCREEN_ANSI = "\e[1;1H\e[2J";
 
     for (int i = 0; maps[i] != NULL; i++) {
         for (int j = 0; maps[i][j]; j++) {
@@ -49,6 +51,9 @@ char **edit_maps(char **maps)
         }
     }
     maps_bin(maps);
+    my_put_array(maps);
+    while (c++ < 100000000);
+    write(STDOUT_FILENO, CLEAR_SCREEN_ANSI, 11);
 
     return maps;
 }

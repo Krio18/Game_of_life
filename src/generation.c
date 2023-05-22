@@ -12,7 +12,7 @@ void full_map(int fd, int x)
     int chose;
 
     chose = rand() % 5;
-    if (x == 49)
+    if (x == 99)
         write(fd, "\n", 1);
     else {
         if (chose == 4)
@@ -32,8 +32,8 @@ char **generation(void)
     stat("tmp.txt", &sb);
     maps_1d = malloc(sizeof(char) * (sb.st_size + 1));
     srand(time(NULL));
-    for (int y = 0; y < 20; y++) {
-        for (int x = 0; x < 50; x++)
+    for (int y = 0; y < 40; y++) {
+        for (int x = 0; x < 100; x++)
             full_map(fd, x);
     }
     lseek(fd, 0, SEEK_SET);

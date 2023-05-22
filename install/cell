@@ -22,6 +22,7 @@ while getopts "hu" option; do
         cd ~/Game_of_life && git pull
         sudo rm /usr/local/bin/cell
         ./install/install.sh
+        exit
         ;;
     h)
         echo ""

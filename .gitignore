@@ -1,4 +1,4 @@
 *.a
 *.o
 gameoflife
-*.txt
+*.vscode

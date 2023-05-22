@@ -20,7 +20,7 @@ int main(int ac, char **av)
     int count = 0;
 
     if (ac == 1) {
-        count = 2;
+        count = 200;
         map = generation();
     }
     if (ac == 3) {
