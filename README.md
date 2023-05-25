@@ -3,7 +3,7 @@
 "Game of Life" is a computer program that simulates an environment composed of living and dead cells, originally developed by the British mathematician John Conway in 1970. This simulation is based on a set of simple rules that determine the evolution of cells over generations.
 
 ------------------------------------------------------------------------------------
-# `non-functional program.  currently in progress.`
+# `currently in progress.`
 
 ------------------------------------------------------------------------------------
 
