@@ -13,7 +13,7 @@ ORANGE='\033[1;33m'
 
 TEST='\033[5;31m'
 
-DIR=$(find / -name Game_of_life 2>/dev/null)
+DIR=DIR=$(find / -name Game_of_life 2>/dev/null -type d -print -quit)
 
 while getopts "hud" option; do
     case $option in
