@@ -23,7 +23,11 @@ ${RESET}"
 echo ""
 echo -e "${ORANGE}v0.9"
 echo ""
-echo -e "${ORANGE}Usage: ${GREEN}cell [${LIGHT_GREEN}optional_file_map${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
+        echo ""
+        echo -e "${ORANGE}Usage: ${GREEN}cell [${LIGHT_GREEN}optional_file_map${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
+        echo ""
+        echo -e "${ORANGE}[-u]: ${GREEN}cell [${LIGHT_GREEN}optional_file_map${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
+        echo ""
 
 cd $(find / -name Game_of_life 2>/dev/null -type d -print -quit)
 

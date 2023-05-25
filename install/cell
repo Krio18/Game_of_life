@@ -58,5 +58,6 @@ while getopts "hud" option; do
 done
 
 echo ""
-cd $(find / -name Game_of_life 2>/dev/null -type d -print -quit) && ./gameoflife "$@"
+cd $(find / -name Game_of_life 2>/dev/null -type d -print -quit)
+./gameoflife "$@"
 echo ""
