@@ -15,11 +15,16 @@ echo -e "${CRED}
 |   (_   |  _| |  |     |  |
  \    \  | |_  |  |___  |  |___
   \____| |___| |______| |______|
+
 ${RESET}"
 echo ""
 echo -e "${ORANGE}Usage: ${GREEN}cell [${LIGHT_GREEN}optional_file_map${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
 
-cd ~/Game_of_life && ./install/install.sh
+cd $(pwd)/Game_of_life
+
+chmod +x install/install.sh
+
+./install/install.sh
 
 echo ""
 echo -e "${ORANGE}You can delete ${LIGHT_GREEN}'get_cell.sh'${GREEN} file now.${RESET}"
