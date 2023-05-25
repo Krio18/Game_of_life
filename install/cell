@@ -13,8 +13,6 @@ ORANGE='\033[1;33m'
 
 TEST='\033[5;31m'
 
-DIR=$(find / -name Game_of_life 2>/dev/null -type d -print -quit)
-
 while getopts "hud" option; do
     case $option in
     d)
@@ -43,7 +41,7 @@ while getopts "hud" option; do
         echo ""
         echo -e "${ORANGE}update detected${RESET}"
         echo ""
-        cd $(pwd)/Game_of_life && git pull
+        cd $(find / -name Game_of_life 2>/dev/null -type d -print -quit) && git pull
         sudo rm /usr/local/bin/cell
         ./install/install.sh
         exit
@@ -64,5 +62,5 @@ while getopts "hud" option; do
 done
 
 echo ""
-cd $(pwd)/Game_of_life && ./gameoflife "$@"
+cd $(find / -name Game_of_life 2>/dev/null -type d -print -quit) && ./gameoflife "$@"
 echo ""
