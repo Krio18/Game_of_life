@@ -19,7 +19,7 @@ while getopts "hu" option; do
         echo ""
         echo -e "${ORANGE}update detected${RESET}"
         echo ""
-        cd ~/Game_of_life && git pull
+        cd $(pwd)/Game_of_life && git pull
         sudo rm /usr/local/bin/cell
         ./install/install.sh
         exit
@@ -40,5 +40,5 @@ while getopts "hu" option; do
 done
 
 echo ""
-cd ~/Game_of_life && ./gameoflife "$@"
+cd $(pwd)/Game_of_life && ./gameoflife "$@"
 echo ""
