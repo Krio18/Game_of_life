@@ -13,13 +13,37 @@ ORANGE='\033[1;33m'
 
 TEST='\033[5;31m'
 
-while getopts "hu" option; do
+DIR=$(DIR=$(dirname $(readlink -f $0))
+
+while getopts "hud" option; do
     case $option in
+    d)
+        echo ""
+        read -p "remove game of life [y/n]"
+        echo ""
+        if [["$response" == "y"]]; then
+            echo "yes";
+        elif [["$response" == "yes"]]; then
+            echo "yes";
+        elif [["$response" == "Y"]]; then
+            echo "yes";
+        elif [["$response" == ""]]; then
+            echo "yes";
+        elif [["$response" == "n"]]; then
+            echo "no";
+        elif [["$response" == "N"]]; then
+            echo "no";
+        elif [["$response" == "no"]]; then
+            echo "no";
+        else
+            echo "Réponse invalide";
+        fi
+        ;;
     u)
         echo ""
         echo -e "${ORANGE}update detected${RESET}"
         echo ""
-        cd $(pwd)/Game_of_life && git pull
+        cd "$script_directory/Game_of_life" && git pull
         sudo rm /usr/local/bin/cell
         ./install/install.sh
         exit
