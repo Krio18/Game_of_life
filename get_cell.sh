@@ -11,8 +11,8 @@ LIGHT_GREEN='\033[1;32m'
 ORANGE='\033[1;33m'
 
 git clone git@github.com:Krio18/Game_of_life.git
-echo -e "
-${CRED1}   ____ ${CRED2}  ___ ${CRED3}  __     ${CRED4}  __
+echo -e "${CRED1}
+   ____ ${CRED2}  ___ ${CRED3}  __     ${CRED4}  __
 ${CRED1}  /    |${CRED2} |  _|${CRED3} |  |    ${CRED4} |  |
 ${CRED1} /   _/ ${CRED2} | |_ ${CRED3} |  |    ${CRED4} |  |
 ${CRED1}|   (_  ${CRED2} |  _|${CRED3} |  |    ${CRED4} |  |
