@@ -11,7 +11,7 @@ make -s
 # Déplacement des binaire vers un emplacement approprié
 mkdir Binary
 mv src/*.o ./Binary
-mv src/map_handling*.o ./Binary
+mv src/map_handling/*.o ./Binary
 mv lib/my/*.o ./Binary
 
 # Permissions d'exécution pour l'utilisateur
