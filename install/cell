@@ -13,7 +13,7 @@ ORANGE='\033[1;33m'
 
 TEST='\033[5;31m'
 
-DIR=$(DIR=$(dirname $(readlink -f $0))
+DIR=$(find) -name Game_of_life
 
 while getopts "hud" option; do
     case $option in
@@ -43,7 +43,7 @@ while getopts "hud" option; do
         echo ""
         echo -e "${ORANGE}update detected${RESET}"
         echo ""
-        cd "$script_directory/Game_of_life" && git pull
+        cd ${DIR} && git pull
         sudo rm /usr/local/bin/cell
         ./install/install.sh
         exit
@@ -64,5 +64,5 @@ while getopts "hud" option; do
 done
 
 echo ""
-cd $(pwd)/Game_of_life && ./gameoflife "$@"
+cd ${DIR} && ./gameoflife "$@"
 echo ""
