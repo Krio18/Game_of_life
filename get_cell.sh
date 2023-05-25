@@ -21,7 +21,7 @@ ${CRED}  \____|${CGREEN} |___|${CBROWN} |______|${CBLUE} |______|
 
 ${RESET}"
 echo ""
-echo -e"${ORANGE}v0.3"
+echo -e"${ORANGE}v0.9"
 echo ""
 echo -e "${ORANGE}Usage: ${GREEN}cell [${LIGHT_GREEN}optional_file_map${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
 
