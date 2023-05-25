@@ -6,11 +6,10 @@
 ##
 
 SRC	=	src/main.c	\
-		src/create_maps.c	\
-		src/edit_maps.c	\
-		src/cell_dies.c	\
-		src/action.c	\
 		src/generation.c	\
+		src/map_handling/verif_action.c	\
+		src/map_handling/edit_maps.c	\
+		src/map_handling/restor_map.c	\
 
 OBJ	=	$(SRC:.c=.o)
 

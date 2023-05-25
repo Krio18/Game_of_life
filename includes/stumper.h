@@ -11,11 +11,11 @@
     #include "my.h"
     #include <string.h>
     #include <time.h>
+
     char **create_map(char **av);
+    int x_verif(char **maps, int i, int j);
     char **edit_maps(char **maps);
-    char cell_die(char **maps, int i, int j, int nb_cell);
-    char **maps_bin(char **maps);
-    int make_action(char **maps, int i, int j, int nb_cell);
+    char **maps_restor(char **maps);
     char **generation(void);
 
 #endif /* !STUMPER_H_ */

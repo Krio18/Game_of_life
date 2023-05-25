@@ -7,15 +7,29 @@
 
 #include "../includes/stumper.h"
 
+char **create_map(char **av)
+{
+    struct stat sb;
+    char *maps_1d;
+    char **maps;
+
+    stat(av[1], &sb);
+    maps_1d = open_file(av, &sb);
+    maps = my_str_to_tab(maps_1d);
+
+    free(maps_1d);
+    return maps;
+}
+
 void full_map(int fd, int x)
 {
     int chose;
 
-    chose = rand() % 5;
+    chose = rand() % 2;
     if (x == 99)
         write(fd, "\n", 1);
     else {
-        if (chose == 4)
+        if (chose == 1)
             write(fd, "X", 1);
         else
             write(fd, ".", 1);

@@ -13,8 +13,13 @@ Get `this` commande in your shell :
 
     curl -o get_cell.sh https://raw.githubusercontent.com/Krio18/Game_of_life/main/get_cell.sh && bash get_cell.sh
 
-`After that` you can delete 'get_cell.sh' of your root.
+`After that` you can delete 'get_cell.sh'.
 
+## uninstall :
+
+Get `this` commande in your shell :
+
+    cell -d
 
 ## Rules :
 
@@ -25,9 +30,10 @@ Get `this` commande in your shell :
 
 
 
-### Run :
+## Run :
 
 `Because it's cool to use it :`
 
-<pre>Usage: cell [optional_file_map] [optional_number]"</pre>
+<pre>Usage: cell [optional_number]"</pre>
 
+[optional_number] = number of iterations.

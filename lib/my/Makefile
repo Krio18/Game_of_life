@@ -14,6 +14,7 @@ SRC	=	my_getnbr.c	\
 		my_strlen.c	\
 		my_str_to_tab.c	\
 		my_open_file.c	\
+		my_free_array.c	\
 
 OBJ	=	$(SRC:.c=.o)
 

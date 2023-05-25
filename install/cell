@@ -17,25 +17,24 @@ while getopts "hud" option; do
     case $option in
     d)
         echo ""
-        read -p "remove game of life [y/n]"
+        read -p "Remove Game-Of-Life [y/n]: " response
         echo ""
-        if [["$response" == "y"]]; then
-            echo "yes";
-        elif [["$response" == "yes"]]; then
-            echo "yes";
-        elif [["$response" == "Y"]]; then
-            echo "yes";
-        elif [["$response" == ""]]; then
-            echo "yes";
-        elif [["$response" == "n"]]; then
-            echo "no";
-        elif [["$response" == "N"]]; then
-            echo "no";
-        elif [["$response" == "no"]]; then
-            echo "no";
+        if [[ "$response" == "y" || "$response" == "yes" || "$response" == "Y" || "$response" == "" ]]; then
+            echo -e "Bye Bye Cell :("
+            echo ""
+            cd $(find / -name Game_of_life 2>/dev/null -type d -print -quit)
+            cd ..
+            rm -rf Game_of_life
+            sudo rm -r /usr/local/bin/cell
+            echo "Success"
+        elif [[ "$response" == "n" || "$response" == "no" || "$response" == "N" ]]; then
+            echo "Nothing to do."
+            echo ""
         else
-            echo "Réponse invalide";
+            echo "Invalid response."
+            echo ""
         fi
+        exit
         ;;
     u)
         echo ""
@@ -43,6 +42,7 @@ while getopts "hud" option; do
         echo ""
         cd $(find / -name Game_of_life 2>/dev/null -type d -print -quit) && git pull
         sudo rm /usr/local/bin/cell
+        rm -r Binary
         ./install/install.sh
         exit
         ;;
@@ -50,13 +50,9 @@ while getopts "hud" option; do
         echo ""
         echo -e "${ORANGE}Usage: ${GREEN}cell [${LIGHT_GREEN}optional_file_map${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
         echo ""
-        ;;
-    *)
+        echo -e "${ORANGE}[-u]: ${GREEN}cell [${LIGHT_GREEN}optional_file_map${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
         echo ""
-        echo -e "${ORANGE}cell: ${CRED}error:${RESET} ${ORANGE}${LORANGE}unrecognized arguments:${RESET}${RED} $@${RESET}"
-        echo ""
-        echo -e "${ORANGE}Usage: ${GREEN}cell [${LIGHT_GREEN}optional_file_map${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
-        echo ""
+        exit
         ;;
     esac
 done

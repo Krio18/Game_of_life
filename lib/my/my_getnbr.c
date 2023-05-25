@@ -20,6 +20,10 @@ int my_getnbr(char const *str)
     int isneg = 0;
 
     for (int i = 0; str[i]; i++) {
+        if (str[i] > '9' || str[i] < '0') {
+            my_putstr("Please enter a number.\n");
+            exit(84);
+        }
         if (str[i] == '-')
             isneg = 1;
         if (str[i] >= '0' && str[i] <= '9')
