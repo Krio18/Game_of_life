@@ -7,7 +7,7 @@ GREEN='\033[0;32m'
 LIGHT_GREEN='\033[1;32m'
 ORANGE='\033[1;33m'
 
-DIR=$(DIR=$(dirname $(readlink -f $0))
+DIR=$(DIR=$(dirname $(readlink -f $0)))
 
 git clone git@github.com:Krio18/Game_of_life.git
 echo -e "${CRED}
