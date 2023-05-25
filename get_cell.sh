@@ -7,8 +7,6 @@ GREEN='\033[0;32m'
 LIGHT_GREEN='\033[1;32m'
 ORANGE='\033[1;33m'
 
-DIR=$(DIR=$(dirname $(readlink -f $0)))
-
 git clone git@github.com:Krio18/Game_of_life.git
 echo -e "${CRED}
    ____   ___   __       __
@@ -22,7 +20,7 @@ ${RESET}"
 echo ""
 echo -e "${ORANGE}Usage: ${GREEN}cell [${LIGHT_GREEN}optional_file_map${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
 
-cd "$script_directory/Game_of_life"
+cd $(pwd)/Game_of_life
 
 chmod +x install/install.sh
 
