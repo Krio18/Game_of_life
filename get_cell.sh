@@ -22,7 +22,7 @@ ${RESET}"
 echo ""
 echo -e "${ORANGE}Usage: ${GREEN}cell [${LIGHT_GREEN}optional_file_map${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
 
-cd $DIR
+cd "$DIR"
 
 chmod +x install/install.sh
 
