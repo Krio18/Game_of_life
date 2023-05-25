@@ -15,7 +15,7 @@ Get `this` commande in your shell :
 
 `After that` you can delete 'get_cell.sh'.
 
-## uninstall :
+## Uninstall :
 
 Get `this` commande in your shell :
 
