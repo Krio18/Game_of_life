@@ -48,9 +48,10 @@ while getopts "hud" option; do
         ;;
     h)
         echo ""
-        echo -e "${ORANGE}Usage: ${GREEN}cell [${LIGHT_GREEN}optional_file_map${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
+        echo -e "${ORANGE}Usage: ${GREEN}cell [${LIGHT_GREEN}optional_flag${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
         echo ""
-        echo -e "${ORANGE}[-u]: ${GREEN}cell [${LIGHT_GREEN}optional_file_map${GREEN}] [${LIGHT_GREEN}optional_number${GREEN}]${RESET}"
+        echo -e "       ${ORANGE}[-u]: ${LIGHT_GREEN}Update Game-Of-Life${RESET}"
+        echo -e "       ${ORANGE}[-d]: ${LIGHT_GREEN}Delete Game-Of-Life${RESET}"
         echo ""
         exit
         ;;
